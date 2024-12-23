@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 继承性 -->
+    <!-- <style>
+        body {
+            font-size: 30px;
+        }
+        /* 继承性 子级默认继承父级的文字控制属性 */
+        /* div p span 都是body的子级 */
+    </style> -->
+
+    <!-- 层叠性 -->
+    <!-- <style>
+        /* 相同的属性会覆盖 后面的CSS属性覆盖前面的CSS属性 */
+        /* 不同的属性会叠加 不同的CSS属性都会生效 */
+    </style> -->
+
+    <!-- 选择器的优先级 -->
+    <style>
+        div {
+            color: red;
+        }
+
+        .box {
+            color: green;
+        }
+        /* !important > 行内样式 > id选择器 > 类选择器 > 标签选择器 > 通配符选择器 */
+        /* 选择范围越大 优先级越低 */
+    </style>
+</head>
+<body>
+    <div class="box">div 标签</div>
+    <p>p标签</p>
+    <span>span 标签</span>
+    <br>
+    <a href="#">a标签</a>
+    <!-- 当标签有自己的属性时 继承属性会失效 -->
+</body>
+</html>

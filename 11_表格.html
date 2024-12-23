@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- table 嵌套tr tr嵌套td /th -->
+    <!-- tr 行 table row -->
+    <!-- th 表头单元格 table header -->
+    <!--  td table data 内容单元格-->
+    <!-- 默认是没有边框线的 需要使用border属性添加边框线 -->
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th>姓名</th>
+                <th>数学</th>
+                <th>语文</th>
+                <th>总分</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>张三</td>
+                <td>99</td>
+                <td>100</td>
+                <td>199</td>
+            </tr>
+            <tr>
+                <td>李四</td>
+                <td>98</td>
+                <td>100</td>
+                <td>198</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>总结</td>
+                <td>全市第一</td>
+                <td>全市第一</td>
+                <td>全市第一</td>
+            </tr>
+        </tfoot>
+    </table>
+    <!-- thead tbody tfoot 是表格结构标签 但是是给浏览器看的 认识看不到的 在解析的时候更加明确 -->
+
+    <br><br><hr><br><br>
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th>姓名</th>
+                <th>数学</th>
+                <th>语文</th>
+                <th>总分</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>张三</td>
+                <td>99</td>
+                <td rowspan="2">100</td>
+                <!-- 合并单元格 合并的是行 跨行合并 rowspan 在需要保留的单元行操作 数值是合并几行 -->
+                <td>199</td>
+            </tr>
+            <tr>
+                <td>李四</td>
+                <td>98</td>
+                <!-- <td>100</td> -->
+                <td>198</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>总结</td>
+                <td colspan="3">全市第一</td>
+                <!-- <td>全市第一</td>
+                <td>全市第一</td> -->
+                <!-- 合并单元格 合并的是列 跨列合并 colspan 在需要保留的单元行操作 数值是合并几列 -->
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

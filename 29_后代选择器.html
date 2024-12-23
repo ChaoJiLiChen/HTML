@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div span {
+            color: red;
+        }
+        /* 后代选择器 会选中所有后代 子 孙 级别 */
+
+        /* 父 > 子 这样就只会选择子代了 不会选择所有的后代 */
+
+        div > span {
+            color: green;
+        }
+
+        div > p > span {
+            color: pink;
+        }
+    </style>
+</head>
+<body>
+    <span>span 标签</span>
+    <div>
+        <span>这是div内的子span</span>
+    </div>
+
+    <div> 
+        <span>儿子span</span>
+        <p>
+            <span>孙子span</span>
+        </p>
+    </div>
+</body>
+</html>
